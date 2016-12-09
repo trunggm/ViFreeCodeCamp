@@ -24,7 +24,7 @@ block content
           try {
             var obj = JSON.parse(method);
           } catch(e) {
-            console.error('Invalid sign in object stored', method);
+            console.error('Dấu hiệu không hợp lệ trong đối tượng được lưu trữ', method);
             return;
           }
           $.each($(btnSelector), function(i, item) {
@@ -33,7 +33,7 @@ block content
               $(item).hasClass(obj.methodClass)
             ) {
               $(item).addClass('active');
-              $(item).attr('title', 'This is your last signin method');
+              $(item).attr('title', 'Đây là phương pháp đăng nhập cuối cùng của bạn');
               return false;
             }
           });
