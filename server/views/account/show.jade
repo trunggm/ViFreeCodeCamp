@@ -9,16 +9,16 @@ block content
         if (!user.isGithubCool)
           a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
               i.fa.fa-github
-              | Link my GitHub to unlock my portfolio
+              | Liên kết tài khoản GitHud để mở khóa danh mục đầu tư.
         .col-xs-12
             a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/settings')
-                | Update your settings
+                | Cập nhật cài đặt của bạn
         .col-xs-12
             a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/signout')
-                | Sign me out of Free Code Camp
+                | Đăng xuất ra khỏi Free Code Camp
         .col-xs-12
             a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='mailto:team@freecodecamp.com')
-                | Email us at team@freecodecamp.com
+                | Gửi email cho chúng tôi tại team@freecodecamp.com
         .spacer
     h1.text-center #{username}'s code portfolio
     hr
@@ -42,20 +42,20 @@ block content
             if pledge
                 .spacer
                   h4
-                    | This camper has committed to giving $#{pledge.amount} to
+                    | Free Code School cam kết đem lại $#{pledge.amount} cho
                     a(href='#{pledge.donateUrl}?ref=freecodecamp.com' target='_blank')  #{pledge.displayName}
-                    |  each month until they have completed their #{pledge.goal}.
+                    |  hàng tháng, cho tới khi họ hoàn thành #{pledge.goal}.
                 .spacer
             .row
                 .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
                     if isFrontEndCert
-                        a.btn.btn-primary.btn-block(href='/' + username + '/front-end-certification') View My Front End Development Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/front-end-certification') Xem chứng nhận Front End Development
                     if isDataVisCert
                         .button-spacer
-                        a.btn.btn-primary.btn-block(href='/' + username + '/data-visualization-certification') View My Data Visualization Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/data-visualization-certification') Xem chứng nhận Data Visualization
                     if isBackEndCert
                         .button-spacer
-                        a.btn.btn-primary.btn-block(href='/' + username + '/back-end-certification') View My Back End Development Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/back-end-certification') Xem chứng nhận Back End Development
     .row
       .col-xs-12.text-center
         if (badges.coreTeam && badges.coreTeam.length)
