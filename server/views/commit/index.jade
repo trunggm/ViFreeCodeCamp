@@ -3,7 +3,7 @@ block content
     h2.text-center Commit to yourself. Commit to a nonprofit.
     .row
         .col-xs-12.col-sm-6.col-sm-offset-3
-          p You can give yourself external motivation, and immediately start helping nonprofits. You can do this by pledging a monthly donation to a nonprofit until you’ve earned one of our certifications. This pledge is completely optional. This pledge is entirely between you and the nonprofit, and no money goes to Free Code Camp. You can change your commitment or stop it at any time.
+          p Bạn có thể mang cho mình một động lực từ bên ngoài, và bắt đầu giúp đỡ tổ chức phi lợi nhận ngay từ bây giờ. Bạn có thể làm điều này bằng cách ủng hộ tiền hàng tháng tới tổ chức phi lợi nhuận cho đến khi bạn nhận được một chứng chỉ từ chúng tôi. Điều này là hoàn toàn không bắt buộc. Điều này là lời hứa giữa bạn và tổ chức phi lợi nhuận, và bạn cũng không cần dùng tiền để bắt đầu với Free Codee School. Bạn có thể thay đổi lời hứa của bạn hoặc dừng nó lại bất cứ thời gian nào bạn muốn.
 
     .row
         .col-xs-12.col-sm-6.col-sm-offset-3.text-center
@@ -21,7 +21,7 @@ block content
             input(type='text' value='#{name}' name='nonprofit')
         .row
             .col-xs-12.col-sm-6.col-sm-offset-3
-                h3 Step 1: Which certification do you pledge to complete?
+                h3 Step 1: Chọn một chứng chỉ mà bạn muốn để hoàn thành?
                 .btn-group.btn-group-justified(data-toggle='buttons' role='group')
                     label.btn.btn-primary.btn-lg.active
                         input(type='radio' id=frontEndCert value=frontEndCert name='goal' checked="checked")
@@ -38,33 +38,33 @@ block content
         .spacer
         .row
             .col-xs-12.col-sm-6.col-sm-offset-3
-                h3 Step 2: How much do you want to pledge monthly until you earn that certification?
+                h3 Step 2: Bạn sẽ cam kết bao nhiêu mỗi tháng cho đến khi bạn hoàn thành chứng chỉ đó?
                 .btn-group.btn-group-justified(data-toggle='buttons' role='group')
                     label.btn.btn-primary
                         input(type='radio' id='5-dollar-pledge' value='5' name='amount')
-                        | $5 per month
+                        | $5 mỗi tháng
                     label.btn.btn-primary.active
                         input(type='radio' id='10-dollar-pledge' value='10' name='amount' checked="checked")
-                        | $10 per month
+                        | $10 mỗi tháng
                     label.btn.btn-primary
                         input(type='radio' id='25-dollar-pledge' value='25' name='amount')
-                        | $25 per month
+                        | $25 mỗi tháng
                     label.btn.btn-primary
                         input(type='radio' id='50-dollar-pledge' value='50' name='amount')
-                        | $50 per month
+                        | $50 mỗi tháng
         .spacer
         .col-xs-12.col-sm-6.col-sm-offset-3
-            h3 Step 3: Set up your monthly donation
+            h3 Step 3: Cài đặt ủng hộ mỗi tháng
         .row
             .col-xs-12.col-sm-6.col-sm-offset-3.text-center
-                a#commit-btn-donate.btn.btn-block.btn-lg.btn-primary(href=donateUrl target='_blank') Open the #{displayName} donation page
+                a#commit-btn-donate.btn.btn-block.btn-lg.btn-primary(href=donateUrl target='_blank') Mở trang ủng hộ của #{displayName}
 
         .spacer
         .col-xs-12.col-sm-6.col-sm-offset-3
             h3#commit-step4-text.disabled
-                Step 4: Confirm
-                span#commit-step4-hidden.disabled  (Do step 3 first)
-                span#commit-step4-show.hidden  your commitment to your goal
+                Step 4: Xác nhận
+                span#commit-step4-hidden.disabled  (Bạn phải thực hiện bước 3 trước)
+                span#commit-step4-show.hidden  Cam kết mục tiêu của bạn
         .row
             .col-xs-12.col-sm-6.col-sm-offset-3.text-center
                 button#commit-btn-submit.btn.btn-block.btn-lg.btn-primary.disabled Commit
@@ -74,12 +74,12 @@ block content
             input(type='hidden', name='_csrf', value=_csrf)
             .col-xs-12.col-sm-6.col-sm-offset-3.text-center
                 .button-spacer
-                button.btn.btn-block.btn-lg.btn-default(name='submit' type='submit') Stop my current pledge
+                button.btn.btn-block.btn-lg.btn-default(name='submit' type='submit') Dừng cam kết của tôi
     else
         .row
             .col-xs-12.col-sm-6.col-sm-offset-3.text-center
                 .button-spacer
-                a.btn.btn-block.btn-lg.btn-default(href='/map') Maybe later
+                a.btn.btn-block.btn-lg.btn-default(href='/map') Để sau
     script.
       $(function() {
         $('#commit-btn-donate').click(function() {
