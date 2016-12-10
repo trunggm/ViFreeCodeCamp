@@ -101,10 +101,10 @@ block content
                       table.table.table-striped
                           thead
                               tr
-                                  th.col-xs-5 Projects
-                                  th.col-xs-2.hidden-xs Completed
-                                  th.col-xs-2.hidden-xs Last Updated
-                                  th.col-xs-2.hidden-xs Link
+                                  th.col-xs-5 Dự án
+                                  th.col-xs-2.hidden-xs Hoàn thành
+                                  th.col-xs-2.hidden-xs Update lần cuối
+                                  th.col-xs-2.hidden-xs Liên kết
                           for challenge in projects
                               tr
                                   td.col-xs-5.hidden-xs
@@ -112,7 +112,7 @@ block content
                                   td.col-xs-2.hidden-xs= challenge.completedDate ? challenge.completedDate : 'Not Available'
                                   td.col-xs-2.hidden-xs= challenge.lastUpdated ? challenge.lastUpdated : ''
                                   td.col-xs-2.hidden-xs
-                                      a(href=challenge.solution, target='_blank') View project
+                                      a(href=challenge.solution, target='_blank') Xem dự án
                                   td.col-xs-12.visible-xs
                                       a(href=challenge.solution, target='_blank')= challenge.name
               if (algorithms.length > 0)
@@ -120,10 +120,10 @@ block content
                       table.table.table-striped
                           thead
                               tr
-                                  th.col-xs-5 Algorithms
-                                  th.col-xs-2.hidden-xs Completed
-                                  th.col-xs-2.hidden-xs Last Updated
-                                  th.col-xs-2.hidden-xs Solution
+                                  th.col-xs-5 Thuật toán
+                                  th.col-xs-2.hidden-xs Hoàn thành
+                                  th.col-xs-2.hidden-xs Update lần cuối
+                                  th.col-xs-2.hidden-xs Giải pháp
                           for challenge in algorithms
                               tr
                                   td.col-xs-5.hidden-xs= challenge.name
@@ -144,10 +144,10 @@ block content
                       table.table.table-striped
                           thead
                               tr
-                                  th.col-xs-5 Challenges
-                                  th.col-xs-2.hidden-xs Completed
-                                  th.col-xs-2.hidden-xs Last Updated
-                                  th.col-xs-2.hidden-xs Solution
+                                  th.col-xs-5 Thử thách
+                                  th.col-xs-2.hidden-xs Hoàn thành
+                                  th.col-xs-2.hidden-xs Update lần cuối
+                                  th.col-xs-2.hidden-xs Giải pháp
                           for challenge in challenges
                               tr
                                   td.col-xs-5.hidden-xs= challenge.name
@@ -155,9 +155,9 @@ block content
                                   td.col-xs-2.hidden-xs= challenge.lastUpdated ? challenge.lastUpdated : ''
                                   td.col-xs-2.hidden-xs
                                     if (challenge.solution && challenge.name)
-                                      a(href='/challenges/#{challenge.block}/#{challenge.dashedName}?solution=#{encodeURIComponent(encodeFcc(challenge.solution))}', target='_blank') View solution
+                                      a(href='/challenges/#{challenge.block}/#{challenge.dashedName}?solution=#{encodeURIComponent(encodeFcc(challenge.solution))}', target='_blank') Xem giải pháp
                                     else if (challenge.name)
-                                        a(href='/challenges/#{challenge.block}/#{challenge.dashedName}') View this challenge
+                                        a(href='/challenges/#{challenge.block}/#{challenge.dashedName}') Xem thử thách này.
                                     else
                                         span N/A
                                   td.col-xs-12.visible-xs
