@@ -7,17 +7,17 @@ block content
                 button.close(type='button', data-dismiss='alert')
                     span.ion-close-circled#flash-close
                 #flash-content
-  h2.text-center Update your email address here:
+  h2.text-center Cập nhật địa chỉ email của bạn tại đây:
   form.form-horizontal.update-email(method='POST', action='/api/users/#{user.id}/update-email', name="updateEmailForm")
     .row
       .col-sm-6.col-sm-offset-3
         input(type='hidden', name='_csrf', value=_csrf)
         .form-group
-          input.input-lg.form-control(type='email', name='email', id='email', value=user.email || '', placeholder=user.email || 'Enter your new email', autofocus, required, autocomplete="off")
+          input.input-lg.form-control(type='email', name='email', id='email', value=user.email || '', placeholder=user.email || 'Nhập email mới', autofocus, required, autocomplete="off")
         .form-group
-          button.btn.btn-lg.btn-primary.btn-block(type='submit')= !user.email || user.emailVerified ? 'Update my Email' : 'Verify Email'
+          button.btn.btn-lg.btn-primary.btn-block(type='submit')= !user.email || user.emailVerified ? 'Cập nhật Email' : 'Xác minh Email'
           a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/settings')
-            | Go back to Settings
+            | Quay lại Cài đặt
 
     script.
        $(document).ready(function() {
