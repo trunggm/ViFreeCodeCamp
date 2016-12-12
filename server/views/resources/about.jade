@@ -2,28 +2,28 @@ extends ../layout
 block content
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Statistics
+            h2.text-center Số Liệu Thống Kê
             hr
             ul.population-table
                 li
-                    span.tag Established:&#9;
+                    span.tag Thời Gian Hoạt Động:&#9;
                     span.text-primary #{daysRunning}
-                    | days ago
+                    | ngày trước
                 li.nowrap
-                    span.tag Completed:&#9;
+                    span.tag Đã Hoàn Thành:&#9;
                     span.text-primary #{globalCompletedCount}
-                    | challenges
+                    | thử thách
                 li.nowrap
-                    span.tag Donated:&#9;
+                    span.tag Đã Quyên Góp:&#9;
                     span.text-primary $1,050,000
                     | in pro-bono code
                 li.nowrap
-                    span.tag Pledged:&#9;
+                    span.tag Cam Kết:&#9;
                     span.text-primary $#{globalPledgedAmount}
-                    | to nonprofits
+                    | tới tổ chức phi lợi nhuận
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Certificates
+            h2.text-center Chứng Chỉ
             hr
             ul.population-table
                 li.nowrap
@@ -45,127 +45,125 @@ block content
     .spacer
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Links
+            h2.text-center Liên Kết
             hr
             table.table.link-table
                 tr
                     td.text-center
                         i.fa.fa-medium
                     td
-                        a(href='//medium.freecodecamp.com', target='_blank') Our Medium publication
+                        a(href='//medium.freecodecamp.com', target='_blank') Blog
                 tr
                     td.text-center
                         i.fa.fa-youtube
                     td
-                        a(href="//youtube.com/freecodecamp", target='_blank') Our YouTube channel
+                        a(href="//youtube.com/freecodecamp", target='_blank') YouTube
                 tr
                     td.text-center
                         i.fa.fa-github
                     td
-                        a(href="//github.com/freecodecamp", target='_blank') Our GitHub repository
+                        a(href="//github.com/freecodecamp", target='_blank') GitHub
                 tr
                     td.text-center
                         i.fa.fa-linkedin
                     td
-                        a(href="//www.linkedin.com/edu/school?id=166029", target='_blank') Our LinkedIn university page
+                        a(href="//www.linkedin.com/edu/school?id=166029", target='_blank') LinkedIn
                 tr
                     td.text-center
                         i.fa.fa-twitter
                     td
-                        a(href="//twitter.com/freecodecamp", target='_blank') Our Twitter feed
+                        a(href="//twitter.com/freecodecamp", target='_blank') Twitter
                 tr
                     td.text-center
                         i.fa.fa-facebook
                     td
-                        a(href="//facebook.com/freecodecamp", target='_blank') Our Facebook page
+                        a(href="//facebook.com/freecodecamp", target='_blank') Facebook page
                 tr
                     td.text-center
                         i.fa.fa-reddit
                     td
-                        a(href="//www.reddit.com/r/freecodecamp", target='_blank') Our Subreddit
+                        a(href="//www.reddit.com/r/freecodecamp", target='_blank') Subreddit
                 tr
                     td.text-center
                         i.fa.fa-lock
                     td
-                        a(href="/privacy") Our privacy policy
+                        a(href="/privacy") Chính sách bảo mật
                 tr
                     td.text-center
                         i.fa.fa-balance-scale
                     td
-                        a(href="/code-of-conduct") Our code of conduct
+                        a(href="/code-of-conduct") Quy tắc ứng xử
                 tr
                     td.text-center
                         i.fa.fa-university
                     td
-                        a(href="/academic-honesty") Our academic honesty policy
+                        a(href="/academic-honesty") Chính sách học tập trung thực
                 tr
                     td.text-center
                         i.fa.fa-book
                     td
-                        a(href="/terms") Our terms of service
+                        a(href="/terms") Điều khoản dịch vụ
                 tr
                     td.text-center
                         i.fa.fa-heart
                     td
-                        a(href="/how-nonprofit-projects-work") How our nonprofit projects work
+                        a(href="/how-nonprofit-projects-work") Cách dự án hoạt động
                 tr
                     td.text-center
                         i.fa.fa-video-camera
                     td
-                        a(href="//www.youtube.com/watch?v=O993J5KCR_w&list=PLWKjhJtqVAbnQ048Pa8sAqJoVRhx8TJtM" target='_blank') Nonprofit project demo videos
+                        a(href="//www.youtube.com/watch?v=O993J5KCR_w&list=PLWKjhJtqVAbnQ048Pa8sAqJoVRhx8TJtM" target='_blank') Videos giới thiệu dự án
                 tr
                     td.text-center
                         i.fa.fa-comment
                     td
-                        a(href="/stories") Stories from campers who've become professional software developers
+                        a(href="/stories") Câu chuyện từ học viên thành công
     .spacer
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Frequently Asked Questions
+            h2.text-center Câu hỏi thường gặp
             hr
             html
-                <h4>What is Free Code Camp?</h4>
-                <p class="negative-15">We’re an open source community that helps you learn to code.</p>
-                <h4>How do you help me learn to code?</h4>
-                <p class="negative-15">You can work through our self-paced coding challenges, build projects, and earn certificates. We also connect you with people in your city so you can code together.</p>
-                <h4>Can Free Code Camp help me get a job as a software developer?</h4>
-                <p class="negative-15">Yes. Thousands of people have gotten software developer jobs after joining our open source community.</p>
-                <h4>Is Free Code Camp a coding bootcamp?</h4>
-                <p class="negative-15">No. A lot of coding bootcamps use Free Code Camp as part of their curriculum, though.</p>
+                <h4>Free Code School công ty như thế nào?</h4>
+                <p class="negative-15">Chúng tôi là công ty đào tạo miễn phí cho những người yêu thích lập trình.</p>
+                <h4>Chương trình đào tạo của các bạn?</h4>
+                <p class="negative-15">Bạn sẽ được dạy những kỹ năng lập trình cơ bản, kỹ năng làm việc nhóm, nhận được giấy chứng nhận sau khi hoàn thành khoá học. Chúng tôi giúp bạn kết nối với những người bạn gần nơi bạn sinh sống, để cùng nhau trau dồi kiến thức.</p>
+                <h4>Sau khi hoàn thành khoá học ở Free Code Camp tôi có thể làm việc trong môi trường phát triển phần mềm?</h4>
+                <p class="negative-15">Yes. Hàng nghìn người đang làm việc trong môi trường phần mềm sau khi hoàn thành các khoá học của chúng tôi.</p>            
                 <h4>I work for a school/bootcamp/MOOC. Can we fast track our certified students to work on your nonprofit projects?</h4>
                 <p class="negative-15">Our pro bono Code Grant program is designed for developers to gain real world experience by building projects for nonprofit organizations. We recognize the value of this opportunity for your students. However, at this time, only those who have completed the Front End, Back End, and Data Visualization certifications at Free Code Camp are eligible to participate. <br><br>We would encourage you to consider creating a skills-based volunteer initiative at your school/bootcamp/MOOC. For help getting started, contact <a href=mailto:Michael@freecodecamp.com>Michael@freecodecamp.com.</a></p>
-                <h4>Is Free Code Camp really free?</h4>
-                <p class="negative-15">Yes. Our curriculum, nonprofit projects, and verified certificates are all free.</p>
-                <h4>How can I help nonprofits through Free Code Camp?</h4>
+                <h4>Free Code School thực sự miễn phí?</h4>
+                <p class="negative-15">Free Code School là dự án phi lợi nhuận, bao gồm các chứng chỉ xác nhận.</p>
+                <h4>Tôi có thể làm gì để đầu tư công sức cho Free Code School?</h4>
                 <p class="negative-15">Once you finish the first 1,200 hours of challenges, you’ll get to build a series of solutions for nonprofits. You’ll work in pairs, under the supervision of a volunteer project manager and a stakeholder from the nonprofit.</p>
-                <h4>How much money has Free Code Camp saved nonprofits?</h4>
-                <p class="negative-15">Our community has donated more than a million dollars worth of pro-bono coding for nonprofits so far.</p>
-                <h4>Is there a way I can help nonprofits before I earn my certificates?</h4>
-                <p class="negative-15">Yes. You can <a href="/commit">pledge a monthly donation</a> to a nonprofit of your choosing while you learn.</p>
-                <h4>How long does Free Code Camp take?</h4>
+                <h4>Free Code School đã làm được gì để phát triển cộng đồng?</h4>
+                <p class="negative-15">Free Code School đã đào tạo hàng nghìn lập trình viên cho cộng đồng IT.</p>
+                <h4>Tôi có thể làm gì để đóng góp công sức trước khi tôi có được chứng chỉ?</h4>
+                <p class="negative-15">Bạn có thể <a href="/commit">cam kết đóng góp công sức</a> bằng cách tham gia các hoạt động của Free Code School trong khi học tập.</p>
+                <h4>Thời gian để hoàn thành khoá học?</h4>
                 <p class="negative-15">It takes about 2,080 hours to complete our Full Stack Developer certificate. This translates into one year of full-time coding. We’re completely self-paced though, so take as long as you need.</p>
-                <h4>Is Free Code Camp a replacement for a 4-year degree?</h4>
-                <p class="negative-15">No. Please don’t drop out of college just to pursue Free Code Camp. You can pursue both concurrently. Even though you don’t need a 4-year degree to work as a software developer, it still helps a lot.</p>
-                <h4>I'm a teacher. Is Free Code Camp an appropriate resource for my class?</h4>
+                <h4>Thay vì học 4 năm đại học tôi có thể học ở Free Code School không?</h4>
+                <p class="negative-15">Không. Đừng bỏ trường đại học để theo học Free Code School. Bạn có thể học cả 2 nơi. Bạn không cần bằng Đại học để có việc làm trong ngành phần mềm nhưng nó vẫn sẽ có ích rất nhiều.</p>
+                <h4>Tôi là một giáo viên. Is Free Code Camp an appropriate resource for my class?</h4>
                 <p class="negative-15">Yes. Many high school, college, and adult ed programs incorporate Free Code Camp into their coursework. We're open source, so no license or special permission from us is necessary. We're even building special tools for teachers.</p>
-                <h4>Should I complete all of these challenges in order?</h4>
-                <p class="negative-15">We’ve put a lot of thought into how we introduce concepts. But you’re free to jump around.</p>
+                <h4>Có nên hoàn thành tất cả khoá học theo thứ tự?</h4>
+                <p class="negative-15">Sẽ có những khái niệm cần bạn phải nắm rõ trước khi tìm hiểu sâu hơn, vì thế chúng tôi khuyến khích bạn học các khoá học theo đúng chương trình.</p>
                 <h4>Do I have to use CodePen for the front end projects?</h4>
                 <p class="negative-15">As long as your code is publicly viewable, and you have a live demo, you can use whatever you want.</p>
                 <h4>When will you release the additional React, Sass, and D3 challenges?</h4>
                 <p class="negative-15">We hope to release these in September 2016. In the meantime, other people have completed our React/Sass and D3 projects by referencing their official documentation.</p>
-                <h4>How did Free Code Camp get started?</h4>
-                <p class="negative-15"><a href="https://www.quora.com/profile/Quincy-Larson" target="_blank">Quincy</a> started our open source community in 2014. He is now just one of many active contributors. You can read more in this <a href="https://medium.freecodecamp.com/how-i-made-my-first-million-dollars-in-pro-bono-code-86f911040484#.pgftldy1b" target="_blank">Medium story</a>.</p>
-                <h4>How is Free Code Camp incorporated?</h4>
+                <h4>Free Code School ra đời như thế nào?</h4>
+                <p class="negative-15"><a href="https://www.quora.com/profile/Quincy-Larson" target="_blank">NgocBD</a> started our open source community in 2014. He is now just one of many active contributors. You can read more in this <a href="https://medium.freecodecamp.com/how-i-made-my-first-million-dollars-in-pro-bono-code-86f911040484#.pgftldy1b" target="_blank">Medium story</a>.</p>
+                <h4>Cách hợp tác với Free Code School?</h4>
                 <p class="negative-15">Quincy set up a company in California called Free Code Camp, Inc. to support the Free Code Camp community. It pays for servers and other expenses. It also sponsors Quincy, <a href="https://gitter.im/berkeleytrue" target="_blank">Berkeley</a>, and <a href="https://gitter.im/codenonprofit" target="_blank">Michael</a>, who oversee infrastructure and nonprofit projects.</p>
-                <h4>Can I get a job at Free Code Camp?</h4>
+                <h4>Tôi có thể làm việc ở Free Code School không?</h4>
                 <p class="negative-15">We can't afford to hire anyone, but we can serve as a springboard for your next job. Our contributors have landed jobs at companies like GitHub and Spotify.</p>
-                <h4>Can my company advertise on Free Code Camp?</h4>
-                <p class="negative-15">We don’t show ads.</p>
-                <h4>Can I invest in Free Code Camp?</h4>
-                <p class="negative-15">We're self-funded and don't want outside investment.</p>
-                <h4>Can I donate to Free Code Camp?</h4>
-                <p class="negative-15">We don’t accept donations. Instead, you should <a href="/shop" target="_blank">support us through our shop</a>.</p>
+                <h4>Công ty tôi có thể hợp tác để đặt quảng cáo ở trang Free Code School không?</h4>
+                <p class="negative-15">Chúng tôi nhận đặt quảng cáo.</p>
+                <h4>Tôi có thể đầu tư vào Free Code School không?</h4>
+                <p class="negative-15">Chúng tôi không muốn nhận đầu tư từ bên ngoài.</p>
+                <h4>Tôi có thể đóng góp cho Free Code School không?</h4>
+                <p class="negative-15">Chúng tôi không chấp nhận sự đóng góp. Thay vào đó, bạn nên <a href="/shop" target="_blank">ủng hộ thông qua các cửa hàng của chúng tôi</a>.</p>
 
     .spacer
         .row
